@@ -1,141 +1,431 @@
-{% extends "classic/inc/base1.html" %}
+{% extends "simple/inc/base.html" %}
 {% load staticfiles static %}
 
-{# navigazione attiva #}
-{% block index_navigation_active %}fh5co-active{% endblock %}
-
-{# titolo e sottotitolo della pagina #}
-{% block page_title %}Lorem <strong>ipsum</strong> dolor sit amet{% endblock %}
-{% block page_subtitle %}Lorem ipsum dolor sit amet, consectetur adipiscing elit{% endblock %}
-
-{# contenuto della pagina #}
 {% block page_content %}
-	<!-- end:header-top -->
-	<div id="fh5co-features">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="feature-left">
-						<div>
-							<h3>Titolo1</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-						</div>
-					</div>
-
+<!-- BEGIN SLIDER AREA-->
+<div class="slider_area">
+	<!-- BEGIN SLIDER-->          
+	<div id="slides">
+		<ul class="slides-container">
+			<!-- THE FIRST SLIDE-->
+			<li>
+				<!-- FIRST SLIDE OVERLAY -->
+				<div class="slider_overlay"></div>
+				<!-- FIRST SLIDE MAIN IMAGE -->
+				<img src="{% static "simple/img/full-slide1.jpg" %}" alt="img">
+				<!-- FIRST SLIDE CAPTION-->
+				<div class="slider_caption">
+					<h2>Hi,We are Ultramodern</h2>
+					<p>we are a group of experienced designers and developers</p>
+					<a href="#" class="slider_btn">Who We are</a>              
 				</div>
-				<div class="col-md-4">
-					<div class="feature-left">
-						<div>
-							<h3>Titolo2</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-						</div>
-					</div>
+			</li>
+			<!-- THE SECOND SLIDE-->
+			<li>
+				<!-- SECOND SLIDE OVERLAY -->
+				<div class="slider_overlay"></div>
+				<!-- SECOND SLIDE MAIN IMAGE -->
+				<img src="{% static "simple/img/full-slide1.jpg" %}" alt="img">
+				<!-- SECOND SLIDE CAPTION-->
+				<div class="slider_caption">
+					<h2>Hi,We are Ultramodern</h2>
+					<p>we are a group of experienced designers and developers</p>
+					<a href="#" class="slider_btn">Who We are</a>
 				</div>
-				<div class="col-md-4">
-					<div class="feature-left">
-						<div>
-							<h3>Titolo3</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+			</li>
+			<!-- THE THIRD SLIDE-->
+			<li>
+				<!-- THIRD SLIDE OVERLAY -->
+				<div class="slider_overlay"></div>
+				<!-- THIRD SLIDE MAIN IMAGE -->
+				<img src="{% static "simple/img/full-slide1.jpg" %}" alt="img">
+				<!-- THIRD SLIDE CAPTION-->
+				<div class="slider_caption">
+					<h2>we'll change your Idea of Design</h2>
+					<p>we are a group of experienced designers and developers</p>
+					<a href="#" class="slider_btn">Who We are</a>                 
+				</div>
+			</li>
+		</ul>
+		<!-- BEGAIN SLIDER NAVIGATION -->
+		<nav class="slides-navigation">
+			<!-- PREV IN THE SLIDE -->
+			<a class="prev" href="#">
+				<span class="icon-wrap"></span>
+				<h3><strong>Prev</strong></h3>
+			</a>
+			<!-- NEXT IN THE SLIDE -->
+			<a class="next" href="#">
+				<span class="icon-wrap"></span>
+				<h3><strong>Next</strong></h3>
+			</a>
+		</nav>
+	</div>
+	<!-- END SLIDER-->          
+</div>
+<!-- END SLIDER AREA -->
+</header>
+<!--=========== End HEADER SECTION ================--> 
+<!--=========== BEGIN ABOUT SECTION ================-->
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12">
+				<div class="about_area">
+					<!-- START ABOUT HEADING -->
+					<div class="heading">
+						<h2 class="wow fadeInLeftBig">About Us</h2>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+					</div>
+					<!-- START ABOUT CONTENT -->
+					<div class="about_content">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="about_featured">
+									<div class="panel-group" id="accordion">
+										<!-- START SINGLE FEATURED ITEAM #1-->
+										<div class="panel panel-default wow fadeInLeft">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+													<span class="fa fa-check-square-o"></span>Creative & clean Design
+													</a>
+												</h4>
+											</div>
+											<div id="collapseOne" class="panel-collapse collapse in">
+												<div class="panel-body">
+													It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). 
+												</div>
+											</div>
+										</div>
+										<!-- START SINGLE FEATURED ITEAM #2 -->
+										<div class="panel panel-default wow fadeInLeft">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+													<span class="fa fa-check-square-o"></span>100% responsive layout
+													</a>
+												</h4>
+											</div>
+											<div id="collapseTwo" class="panel-collapse collapse">
+												<div class="panel-body">
+													It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+												</div>
+											</div>
+										</div>
+										<!-- START SINGLE FEATURED ITEAM #3 -->
+										<div class="panel panel-default wow fadeInLeft">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+													<span class="fa fa-check-square-o"></span>Detail Documentation
+													</a>
+												</h4>
+											</div>
+											<div id="collapseThree" class="panel-collapse collapse">
+												<div class="panel-body">
+													It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). 
+												</div>
+											</div>
+										</div>
+										<!-- START SINGLE FEATURED ITEAM #4 -->
+										<div class="panel panel-default wow fadeInLeft">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+													<span class="fa fa-check-square-o"></span>24Hours Premium Support
+													</a>
+												</h4>
+											</div>
+											<div id="collapseFour" class="panel-collapse collapse">
+												<div class="panel-body">
+													It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages. 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="about_slider">
+									<!-- BEGAIN FEATURED SLIDER -->
+									<div class="featured_slider">
+										<!-- SINGLE SLIDE IN THE SLIDER -->
+										<div class="single_iteam">
+											<a href="#"> <img src="{% static "simple/img/feature_img1.jpg" %}" alt="img"></a>                          
+										</div>
+										<!-- SINGLE SLIDE IN THE SLIDER -->
+										<div class="single_iteam">
+											<a href="#"> <img src="{% static "simple/img/feature_img1.jpg" %}" alt="img"></a>                          
+										</div>
+										<!-- SINGLE SLIDE IN THE SLIDER -->
+										<div class="single_iteam">
+											<a href="#"> <img src="{% static "simple/img/feature_img1.jpg" %}" alt="img"></a>                           
+										</div>
+										<!-- SINGLE SLIDE IN THE SLIDER -->
+										<div class="single_iteam">
+											<a href="#"> <img src="{% static "simple/img/feature_img1.jpg" %}" alt="img"></a>                           
+										</div>
+										<!-- SINGLE SLIDE IN THE SLIDER -->
+										<div class="single_iteam">
+											<a href="#"> <img src="{% static "simple/img/feature_img1.jpg" %}" alt="img"></a>                           
+										</div>
+									</div>
+									<!-- END FEATURED SLIDER -->
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div id="fh5co-feature-product" class="fh5co-section-gray">
-		<div class="container">
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12 text-center heading-section">
-					<h3>Titolo sezione1</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut lectus vestibulum, fringilla tellus in, lacinia ligula. Vivamus id odio maximus, semper justo suscipit, convallis diam.</p>
+</section>
+<!--=========== END ABOUT SECTION ================-->
+<!--=========== BEGIN SERVICE SECTION ================-->
+<section id="service">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12">
+				<!-- BEGAIN SERVICE HEADING -->
+				<div class="heading">
+					<h2 class="wow fadeInLeftBig">Our Services</h2>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 text-center animate-box">
-					<p><img src="{% static "classic/images/macbook.png" %}" alt="Free HTML5 Bootstrap Template" class="img-responsive"></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="feature-text">
-						<h3><span class="number">01.</span> Titolo1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut lectus vestibulum, fringilla tellus in, lacinia ligula. Vivamus id odio maximus, semper justo suscipit, convallis diam.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="feature-text">
-						<h3><span class="number">02.</span> Titolo2</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut lectus vestibulum, fringilla tellus in, lacinia ligula. Vivamus id odio maximus, semper justo suscipit, convallis diam.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="feature-text">
-						<h3><span class="number">03.</span> Titolo3</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut lectus vestibulum, fringilla tellus in, lacinia ligula. Vivamus id odio maximus, semper justo suscipit, convallis diam.</p>
-					</div>
-				</div>
-			</div>
-
-			
 		</div>
-	</div>
-
-	<div id="fh5co-portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center heading-section animate-box">
-					<h3>Titolo sezione2</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
-				</div>
-			</div>
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12">
-					<ul id="fh5co-portfolio-list">
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static "classic/images/work-5.jpg" %}); ">
-							<div class="color-3">
-								<div class="case-studies-summary">
-									<span>Titolo1</span>
-									<h2>Testo immagine1</h2>
+		<div class="row">
+			<div class="col-lg-12 col-md-12">
+				<!-- BEGAIN SERVICE  -->
+				<div class="service_area">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<!-- BEGAIN SINGLE SERVICE -->
+							<div class="single_service wow fadeInLeft">
+								<div class="service_iconarea">
+									<span class="fa fa-line-chart service_icon"></span>
 								</div>
+								<h3 class="service_title">Planning & Strategy</h3>
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
 							</div>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static "classic/images/work-6.jpg" %}); ">
-							<div class="color-4">
-								<div class="case-studies-summary">
-									<span>Titolo2</span>
-									<h2>Testo immagine2</h2>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<!-- BEGAIN SINGLE SERVICE -->
+							<div class="single_service wow fadeInRight">
+								<div class="service_iconarea">
+									<span class="fa fa-suitcase service_icon"></span>
 								</div>
+								<h3 class="service_title">Corporate Branding</h3>
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
 							</div>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static "classic/images/work-1.jpg" %}); ">
-							<div class="color-4">
-								<div class="case-studies-summary">
-									<span>Titolo3</span>
-									<h2>Testo immagine3</h2>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<!-- BEGAIN SINGLE SERVICE -->
+							<div class="single_service wow fadeInLeft">
+								<div class="service_iconarea">
+									<span class="fa fa-eraser service_icon"></span>
 								</div>
+								<h3 class="service_title">Web Desing & Development</h3>
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
 							</div>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static "classic/images/work-2.jpg" %}); "> 
-							<div class="color-4">
-								<div class="case-studies-summary">
-									<span>Titolo4</span>
-									<h2>Testo immagine4</h2>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<!-- BEGAIN SINGLE SERVICE -->
+							<div class="single_service wow fadeInRight">
+								<div class="service_iconarea">
+									<span class="fa fa-paper-plane service_icon"></span>
 								</div>
+								<h3 class="service_title">SEO,SMM and Internet marketing</h3>
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
 							</div>
-						</li>
-						<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static "classic/images/work-3.jpg" %}); ">
-							<div class="color-6">
-								<div class="case-studies-summary">
-									<span>Titolo5</span>
-									<h2>Testo immagine5</h2>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<!-- BEGAIN SINGLE SERVICE -->
+							<div class="single_service wow fadeInLeft">
+								<div class="service_iconarea">
+									<span class="fa fa-envelope-o service_icon"></span>
 								</div>
+								<h3 class="service_title">Email Marketing</h3>
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
 							</div>
-						</li>
-					</ul>		
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<!-- BEGAIN SINGLE SERVICE -->
+							<div class="single_service wow fadeInRight">
+								<div class="service_iconarea">
+									<span class="fa fa-support service_icon"></span>
+								</div>
+								<h3 class="service_title">Premium Customer SUpport</h3>
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- END What we do -->
-{% endblock %}
+</section>
+<!--=========== END SERVICE SECTION ================-->
+<!--=========== BEGAIN WORKS SECTION ================-->
+<section id="works">
+	<!-- BEGAIN MILESTONE WORSK SECTION -->
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<div class="counter_section">
+				<!-- SKILLS COUNTER OVERLAY -->
+				<div class="slider_overlay"></div>
+				<div class="container">
+					<div class="counter_area">
+						<div class="heading">
+							<h3 class="wow fadeInLeft">Some Milestone Works</h3>
+						</div>
+						<!-- START SINGLE COUNTER-->
+						<div class="col-lg-3 col-md-3 col-sm-3">
+							<div class="counter wow fadeInUp">
+								<i class="fa fa-users fa-2x"></i>
+								<h2 class="timer count-title" id="count-number" data-to="940" data-speed="1500">400</h2>
+								<p class="count-text ">Clients</p>
+							</div>
+						</div>
+						<!-- START SINGLE COUNTER-->
+						<div class="col-lg-3 col-md-3 col-sm-3">
+							<div class="counter wow fadeInUp">
+								<i class="fa fa-tasks fa-2x"></i>
+								<h2 class="timer count-title" id="count-number2" data-to="1750" data-speed="1500">300</h2>
+								<p class="count-text ">Projects</p>
+							</div>
+						</div>
+						<!-- START SINGLE COUNTER-->
+						<div class="col-lg-3 col-md-3 col-sm-3">
+							<div class="counter wow fadeInUp">
+								<i class="fa fa-coffee fa-2x"></i>
+								<h2 class="timer count-title" id="count-number3" data-to="300" data-speed="1500">200</h2>
+								<p class="count-text ">Cup Of Coffee</p>
+							</div>
+						</div>
+						<!-- START SINGLE COUNTER-->
+						<div class="col-lg-3 col-md-3 col-sm-3">
+							<div class="counter wow fadeInUp">
+								<i class="fa fa-bullhorn fa-2x"></i>
+								<h2 class="timer count-title" id="count-number4" data-to="875" data-speed="1500">100</h2>
+								<p class="count-text ">Subscribers</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END MILESTONE WORSK SECTION -->
+</section>
+<!--=========== END WORKS SECTION ================-->
+<!--=========== BEGAIN CONTACT SECTION ================-->
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<!-- START CONTACT HEADING -->
+				<div class="heading">
+					<h2 class="wow fadeInLeftBig">Contact Us</h2>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- BEGAIN CONTACT CONTENT -->
+			<div class="contact_content">
+				<!-- BEGAIN CONTACT FORM -->
+				<div class="col-lg-5 col-md-5 col-sm-5">
+					<div class="contact_form">
+						<!-- FOR CONTACT FORM MESSAGE -->
+						<div id="form-messages"></div>
+						<form>
+							<input class="form-control" type="text" placeholder="Name">
+							<input class="form-control" type="email" placeholder="Email">
+							<input class="form-control" type="text" placeholder="Subject">
+							<textarea class="form-control" cols="30" rows="10" placeholder="Your Message"></textarea>
+							<input class="submit_btn" type="submit" value="Send">  
+						</form>
+					</div>
+				</div>
+				<!-- BEGAIN CONTACT MAP -->
+				<div class="col-lg-7 col-md-7 col-sm-7">
+					<div class="contact_map">
+						<!-- BEGAIN GOOGLE MAP -->
+						<div id="map_canvas"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--=========== END CONTACT SECTION ================-->
+<!--=========== BEGAIN CONTACT FEATURE SECTION ================-->
+<section id="contactFeature">
+	<!-- SKILLS COUNTER OVERLAY -->
+	<div class="slider_overlay"></div>
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<div class="container">
+				<div class="contact_feature">
+					<!-- BEGAIN CALL US FEATURE -->
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<div class="single_contact_feaured wow fadeInUp">
+							<i class="fa fa-phone"></i>
+							<h4>Call Us</h4>
+							<p>1-265-596-580</p>
+						</div>
+					</div>
+					<!-- BEGAIN CALL US FEATURE -->
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<div class="single_contact_feaured wow fadeInUp">
+							<i class="fa fa-envelope-o"></i>
+							<h4>Email Address</h4>
+							<p>singlepro@gmail.com</p>
+						</div>
+					</div>
+					<!-- BEGAIN CALL US FEATURE -->
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<div class="single_contact_feaured wow fadeInUp">
+							<i class="fa fa-map-marker"></i>
+							<h4>Office Location</h4>
+							<p>Your Company Office Location</p>
+						</div>
+					</div>
+					<!-- BEGAIN CALL US FEATURE -->
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<div class="single_contact_feaured wow fadeInUp">
+							<i class="fa fa-clock-o"></i>
+							<h4>Working Hours</h4>
+							<p>Monday-Friday 9.00-21.00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--=========== END CONTACT FEATURE SECTION ================-->
+<!--=========== BEGAIN SUBSCRIBE SECTION ================-->
+<section id="subscribe">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12">
+				<!-- START SUBSCRIBE HEADING -->
+				<div class="heading">
+					<h2 class="wow fadeInLeftBig">Subscribe Us</h2>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+				</div>
+				<!-- BEGAIN SUBSCRIVE FORM -->
+				<form class="subscribe_form">
+					<div class="subscrive_group wow fadeInUp">
+						<input class="form-control subscribe_mail" type="email" placeholder="Enter your email address">
+						<input class="subscr_btn" type="submit" value="Subscribe">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!--=========== END SUBSCRIBE SECTION ================-->
+{% endblock page_content %}

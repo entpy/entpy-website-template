@@ -24,7 +24,4 @@ urlpatterns = [
     url(r'^classic/servizi/$', classic.views.services, name='services'),
     url(r'^classic/contatti/$', classic.views.contacts, name='contacts'),
     url(r'^simple/$', simple.views.index, name='index'),
-    url(r'^simple/chi-siamo/$', simple.views.about, name='about'),
-    url(r'^simple/servizi/$', simple.views.services, name='services'),
-    url(r'^simple/contatti/$', simple.views.contacts, name='contacts'),
 ]
