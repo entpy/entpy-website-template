@@ -1,18 +1,15 @@
 {% load staticfiles static %}
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
 	<head>
 		<!-- Basic Page Needs ================================================== -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Single Pro : Home</title>
+		<title>Template "Moderno"</title>
 		<!-- Mobile Specific Metas ================================================== -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/png" href="{% static "simple/img/favicon.png" %}"/>
+		<link rel="shortcut icon" type="image/png" href=""/>
 		<!-- CSS ================================================== -->       
 		<!-- Bootstrap css file-->
 		<link href="{% static "simple/css/bootstrap.min.css" %}" rel="stylesheet">
@@ -26,10 +23,8 @@
 		<link rel="stylesheet" href="{% static "simple/css/animate.css" %}">  
 		<!-- Elastic grid css file -->
 		<link rel="stylesheet" href="{% static "simple/css/elastic_grid.css" %}"> 
-		<!-- Circle counter cdn css file -->
-		<link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>
 		<!-- Default Theme css file -->
-		<link id="orginal" href="{% static "simple/css/themes/default-theme.css" %}" rel="stylesheet">
+		<link id="orginal" href="{% static "simple/css/themes/yellow-theme.css" %}" rel="stylesheet">
 		<!-- Main structure css file -->
 		<link href="{% static "simple/css/style.css" %}" rel="stylesheet">
 		<!-- Google fonts -->
@@ -68,20 +63,16 @@
 						</button>
 						<!-- LOGO -->
 						<!-- TEXT BASED LOGO -->
-						<a class="navbar-brand" href="#">Single<span>Pro</span></a>
+						<a class="navbar-brand" href="#">M<span>oderno</span></a>
 						<!-- IMG BASED LOGO  -->
 						<!--  <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a> --> 
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul id="top-menu" class="nav navbar-nav navbar-right main_nav">
-							<li><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#service">Services</a></li>
-							<li><a href="#works">Works</a></li>
-							<li><a href="#team">Team</a></li>
-							<li><a href="#pricing">Pricing</a></li>
-							<li><a href="#blog">Blog</a></li>
-							<li><a href="#contact">Contacts</a></li>
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#about">Chi Siamo</a></li>
+							<li><a href="#service">I Nostri Servizi</a></li>
+							<li><a href="#contact">Contattaci</a></li>
 						</ul>
 					</div>
 					<!--/.nav-collapse -->
@@ -97,7 +88,7 @@
 					<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="footer_left">
 							<!--=========== Designed By WpFreeware Team ================-->
-							<p>Copyright © 2015 <a href="http://www.wpfreeware.com">WpFreeware</a>. All Rights Reserved</p>
+							<p>2016 | Made with passion by <a href="http://www.entpy.com">Entpy Software</a></p>
 							<!--=========== Designed By WpFreeware Team ================-->
 						</div>
 					</div>
@@ -129,15 +120,7 @@
 		<script src="{% static "simple/js/jquery.superslides.min.js" %}" type="text/javascript"></script>
 		<!-- slick slider -->
 		<script src="{% static "simple/js/slick.min.js" %}"></script>    
-		<!-- for circle counter -->
-		<script src='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/js/jquery.circliful.min.js'></script>
-		<!-- for portfolio filter gallery -->
-		<script src="{% static "simple/js/modernizr.custom.js" %}"></script>
-		<script src="{% static "simple/js/classie.js" %}"></script>
-		<script src="{% static "simple/js/elastic_grid.min.js" %}"></script>
 		<!-- Custom js-->
 		<script src="{% static "simple/js/custom.js" %}"></script>
 	</body>
 </html>
-
-

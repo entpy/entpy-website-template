@@ -53,33 +53,11 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	/*  3. Featured Slider
 	/* ----------------------------------------------------------- */
-	
-
-    $('.featured_slider').slick({
-      dots: true,
-      infinite: true,      
-      speed: 800,
-      arrows:false,      
-      slidesToShow: 1,
-      slide: 'div',
-      autoplay: true,
-      fade: true,
-      autoplaySpeed: 5000,
-      cssEase: 'linear'
-    });
 
 
 	/* ----------------------------------------------------------- */
 	/*  4. Skill Circle
 	/* ----------------------------------------------------------- */
-
-	$('#myStathalf').circliful();
-	$('#myStat').circliful();
-	$('#myStathalf2').circliful();
-	$('#myStat2').circliful();
-	$('#myStat3').circliful();
-	$('#myStat4').circliful();
-	$('#myStathalf3').circliful();
 
 
 	/* ----------------------------------------------------------- */
@@ -222,133 +200,18 @@ jQuery(function($){
 	/*  7. TEAM SLIDER
 	/* ----------------------------------------------------------- */
 
-		$('.team_slider').slick({
-		  dots: false,
-		  infinite: true,
-		  speed: 300,
-		  slidesToShow: 4,
-		  slidesToScroll: 4,
-		  responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		  ]
-		});
-
-
 	/* ----------------------------------------------------------- */
 	/*  8. BLOG SLIDER
 	/* ----------------------------------------------------------- */
-
-
-    $('.blog_slider').slick({
-		  dots: false,
-		  infinite: true,
-		  speed: 300,
-		  slidesToShow: 3,
-		  slidesToScroll: 3,
-		  responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		]
-	});
 
 
 	/* ----------------------------------------------------------- */
 	/*  9. TESTIMONIAL SLIDER
 	/* ----------------------------------------------------------- */
 
-	$('.testimonial_slider').slick({
-      dots: true,
-      infinite: true,      
-      speed: 800,
-      arrows:false,      
-      slidesToShow: 1,
-      slide: 'li',
-      autoplay: true,
-      fade: true,
-      autoplaySpeed: 3000,
-      cssEase: 'linear'
-    });
-
-
     /* ----------------------------------------------------------- */
 	/*  10. CLIENTS SLIDER
 	/* ----------------------------------------------------------- */
-
-    $('.clients_slider').slick({
-		  dots: false,
-		  infinite: true,
-		  speed: 300,
-		  slidesToShow: 4,
-		  slidesToScroll: 4,
-		  responsive: [
-		    {
-		      breakpoint: 1199,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		]
-	});
 
 
     /* ----------------------------------------------------------- */
@@ -358,8 +221,8 @@ jQuery(function($){
 	  var zoom= $('#map_canvas').gmap('option', 'zoom');
       
       $('#map_canvas').gmap().bind('init', function(ev, map) {
-        $('#map_canvas').gmap('addMarker', {'position': '57.7973433,12.0502107', 'bounds': true});
-        $('#map_canvas').gmap('option', 'zoom', 13);
+        $('#map_canvas').gmap('addMarker', {'position': '45.0711813,7.6850388', 'bounds': true});
+        $('#map_canvas').gmap('option', 'zoom', 15);
       });
 
 
